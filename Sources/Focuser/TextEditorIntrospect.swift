@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0.0, *)
 public struct FocusModifierTextEditor<Value: FocusStateCompliant & Hashable>: ViewModifier {
     @Binding var focusedField: Value?
     var equals: Value

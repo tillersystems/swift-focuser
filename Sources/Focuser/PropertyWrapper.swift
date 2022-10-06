@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0.0, *)
 @propertyWrapper public struct FocusStateLegacy<Value>: DynamicProperty where Value: Hashable {
     @State var form: Value?
     
