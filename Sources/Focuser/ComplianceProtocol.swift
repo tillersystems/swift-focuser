@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol FocusStateCompliant: Hashable {
-    static var last: Self { get }
+    var returnKeyType: UIReturnKeyType? { get }
     var next: Self? { get }
 }
